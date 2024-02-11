@@ -19,105 +19,10 @@
 //   );
 // };
 import * as React from "react"; //don't change this line
+import "./index.css";
 
-export const App = () => {
+export const App = ({ product }) => {
   const [selectedVariantImg, setSelectedVariantImg] = React.useState("");
-
-  const product = {
-    id: "gid://shopify/Product/6792849653898",
-    handle: "valentina-top-in-sage-linen",
-    availableForSale: true,
-    title: "Valentina Top in Sage Linen",
-    description: "Beautiful spring and summer top!",
-    descriptionHtml: "Beautiful spring and summer top!",
-    options: [
-      {
-        id: "gid://shopify/ProductOption/8713669935242",
-        name: "Size",
-        values: ["Small", "Medium", "Large"]
-      }
-    ],
-    priceRange: {
-      maxVariantPrice: {
-        amount: "50.0",
-        currencyCode: "USD"
-      },
-      minVariantPrice: {
-        amount: "50.0",
-        currencyCode: "USD"
-      }
-    },
-    featuredImage: {
-      url:
-        "https://cdn.shopify.com/s/files/1/0311/3962/7146/products/1G6A6902_550x825_crop_center_e98494e2-f7b6-40ec-9f48-08ab590731b0.jpg?v=1646781977",
-      altText: null,
-      width: 550,
-      height: 825
-    },
-    seo: {
-      description: null,
-      title: null
-    },
-    tags: ["Spring"],
-    updatedAt: "2024-02-02T23:45:11Z",
-    images: [
-      {
-        url:
-          "https://cdn.shopify.com/s/files/1/0311/3962/7146/products/1G6A6902_550x825_crop_center_e98494e2-f7b6-40ec-9f48-08ab590731b0.jpg?v=1646781977",
-        altText:
-          "Valentina Top in Sage Linen - 1G6A6902_550x825_crop_center_e98494e2-f7b6-40ec-9f48-08ab590731b0",
-        width: 550,
-        height: 825
-      }
-    ],
-    variants: [
-      {
-        id: "gid://shopify/ProductVariant/40832907477130",
-        title: "Small",
-        availableForSale: true,
-        selectedOptions: [
-          {
-            name: "Size",
-            value: "Small"
-          }
-        ],
-        price: {
-          amount: "50.0",
-          currencyCode: "USD"
-        }
-      },
-      {
-        id: "gid://shopify/ProductVariant/40832907509898",
-        title: "Medium",
-        availableForSale: true,
-        selectedOptions: [
-          {
-            name: "Size",
-            value: "Medium"
-          }
-        ],
-        price: {
-          amount: "50.0",
-          currencyCode: "USD"
-        }
-      },
-      {
-        id: "gid://shopify/ProductVariant/40832907542666",
-        title: "Large",
-        availableForSale: false,
-        selectedOptions: [
-          {
-            name: "Size",
-            value: "Large"
-          }
-        ],
-        price: {
-          amount: "50.0",
-          currencyCode: "USD"
-        }
-      }
-    ]
-  };
 
   return (
     <div className="relative m-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
